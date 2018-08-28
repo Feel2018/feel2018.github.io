@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.slick-active {
+  outline: none !important;
+}
+
+/* Основные цвета сайта */
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?11618308");
+  src: url("../fonts/fontello.eot?11618308#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?11618308") format("woff2"), url("../fonts/fontello.woff?11618308") format("woff"), url("../fonts/fontello.ttf?11618308") format("truetype"), url("../fonts/fontello.svg?11618308#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?11618308#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+.icon-telegram:before {
+  content: '\f2c6';
+}
+
+/* '' */
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background-color: #F2FCF3;
+  font-family: #131313;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 18px 25px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-primari {
+  background-color: #6DCB01;
+  border-bottom: 4px solid #529801;
+}
+.btn-primari:hover {
+  background-color: #75da01;
+}
+
+.top-nav {
+  background-color: #fff;
+  padding: 15px 15px 15px 45px;
+}
+.top-nav_menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-nav_menu li {
+  margin-right: 45px;
+}
+.top-nav_menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #131313;
+  font-weight: 700;
+}
+.top-nav_menu li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #6DCB01;
+  -webkit-transform: translateY(37px) scale(0);
+          transform: translateY(37px) scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.top-nav_menu li a:hover {
+  text-transform: none;
+  color: #6DCB01;
+}
+.top-nav_menu li a:hover::after {
+  -webkit-transform: translateY(37px) scale(1);
+          transform: translateY(37px) scale(1);
+}
+
+.left-sidebar {
+  margin-top: 40px;
+}
+.left-sidebar_menu {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+}
+.left-sidebar_menu li {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.left-sidebar_menu li:first-child a {
+  padding-top: 20px;
+}
+.left-sidebar_menu li:last-child a {
+  padding-bottom: 20px;
+}
+.left-sidebar_menu li:hover {
+  background-color: #6DCB01;
+}
+.left-sidebar_menu li:hover a {
+  color: #fff;
+}
+.left-sidebar_menu li a {
+  padding: 20px 40px;
+  display: block;
+  text-decoration: none;
+  color: #131313;
+  font-size: 15px;
+  font-weight: 700;
+}
+.left-sidebar_object {
+  margin-top: 30px;
+  background-color: #fff;
+}
+.left-sidebar_object-description {
+  padding: 30px;
+}
+.left-sidebar_object-description h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content {
+  padding-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+}
+.directions-block {
+  background-color: #fff;
+  height: 220px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.directions-block h3 {
+  color: #6DCB01;
+}
+
+.footer {
+  background-color: #131313;
+  padding: 59px 0;
+  color: #666666;
+}
+.footer-polici-link {
+  font-size: 14px;
+}
+.footer p {
+  margin-bottom: 14px;
+}
+.footer a {
+  color: #666666;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer small {
+  display: block;
+  margin-top: 56px;
+  line-height: 16px;
+  font-size: 10px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  line-height: 32px;
+}
+.footer-contacts, .footer-social-links {
+  text-align: right;
+}
+.footer-social-links li {
+  display: inline-block;
+  display: inline-block;
+  padding-top: 4px;
+  width: 39px;
+  height: 39px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 40px;
+  margin-left: 15px;
+  -webkit-transition: all 0.3em;
+  transition: all 0.3em;
+}
+.footer-social-links li:hover {
+  background-color: rgba(109, 203, 1, 0.9);
+  color: #131313;
+}
+
+/*# sourceMappingURL=main.css.map */
